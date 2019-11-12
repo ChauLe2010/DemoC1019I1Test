@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=[[],[]];
+let tong=0;
+    for(let i=0;i<2;i++)
+        for(let j=0;j<3;j++)
+            a[i][j]=prompt("a["+i+"]["+j+"]=");
+    for(let i=0;i<2;i++) {
+        for (let j = 0; j < 3; j++)
+            document.write(a[i][j] + " ");
+        document.write("<br>");
+    }
+    for(let i=0;i<2;i++)
+        for (let j = 0; j < 3; j++)
+            tong+=0+a[i][j];
+        document.write("Tong la: "+tong);
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function inputN(N){
+        do{
+            N=prompt("Nhap so phan tu cua mang: ");
+        }while(N<0||isNaN(N)==true);
+        return N;
+    }
+    function inputArray(N,array){
+        for(let i=0;i<N;i++){
+            array[i] = prompt("Nhap phan tu thu " + i + ": ");
+        }
+    }
+    function displayArray(array){
+        document.write("Mang vua nhap: ");
+        for(let i=0;i<array.length;i++){
+            document.write(array[i]+" ");
+        }
+    }
+    function maxOfArray(array){
+        if(array.length==0)
+            return "Mang rong";
+        let max=a[0];
+        for(let i=1;i<array.length;i++){
+            if(array[i]>max)
+                max=array[i];
+        }
+        return max;
+    }
+    function main(){
+        let array = [];
+        let number;
+        number=inputN(number);
+        inputArray(number,array);
+        displayArray(array);
+        let max=maxOfArray(array);
+        alert("Phan tu lon nhat trong mang: "+max)
+    }
+    main();
+</script>
+</body>
+</html>

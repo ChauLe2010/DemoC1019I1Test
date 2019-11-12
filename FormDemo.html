@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="get" action="List.html">
+    <fieldset>
+        <legend>Thong tin ca nhan</legend>
+        <table width="50%">
+            <tr>
+                <td>Ho ten</td>
+                <td><input type="text" size="30" value="Ho va ten"></td>
+            </tr>
+
+            <tr>
+                <td>Pass</td>
+                <td><input type="range"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="gt">Nam<input type="radio" name="gt">NU</td>
+            </tr>
+
+
+        </table>
+    </fieldset>
+    <input type="button" value="Gui"></input><input type="reset"></input><input type="submit"></input>
+    <select id="ddlViewBy" onchange="alert(document.getElementById('ddlViewBy').value);">
+        <option value="test1">test1</option>
+        <option value="test2" selected="selected">test2</option>
+        <option value="test3">test3</option>
+    </select>
+</form>
+</body>
+</html>
